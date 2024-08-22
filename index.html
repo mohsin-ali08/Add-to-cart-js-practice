@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to cart</title>
+    <link rel="stylesheet" href="./image/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- starting nav bar  -->
+    <nav
+      class="bg-black bg-opacity-30 backdrop-filter backdrop-blur-md border-b border-white/20 shadow-lg w-full z-50 py-3"
+    >
+      <div class="flex justify-evenly items-center">
+        <a href="#" class="text-xl font-bold">The Chair Studio</a>
+        <!-- Mobile Menu Button -->
+        <button
+          class="block md:hidden text-white focus:outline-none"
+          onclick="toggleMenu()"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <!-- Links -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="font-semibold hover:text-white">Home</a>
+          <a
+            href="./pages/Blogs/blogs.html"
+            class="font-semibold hover:text-white"
+            >Shop</a
+          >
+          <a
+            href="./pages/contact/contact.html"
+            class="font-semibold hover:text-white"
+            >Contact</a
+          >
+          <div class="icon-cart">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
+              />
+            </svg>
+            <span>0</span>
+          </div>
+          <!-- <a href="./pages/auth/login/login.html" id="LoginLink" class="text-white hover:text-blue-600">Login</a>
+            <a href="./pages/auth/signup/signup.html" id="SignupLink" class="text-white hover:text-blue-500">Sign-up</a>
+            <button class="text-white hover:bg-red-700 font-semibold hidden bg-blue-800  px-6 py-1 rounded" onclick="logout()" id="logoutBtn">Logout</button> -->
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden text-center">
+        <a href="#" class="block text-white hover:text-blue-500  py-2"
+          >Home</a
+        >
+        <a
+          href="./pages/Blogs/blogs.html"
+          class="block text-white hover:text-blue-500 px-4 py-2"
+          >Shop</a
+        >
+        <a
+          href="./pages/contact/contact.html"
+          class="block text-white border-b hover:text-blue-500 px-4 py-2"
+          >Contact</a
+        >
+        
+      </div>
+    </nav>
+
+    <div class="container pb-20">
+      <header>
+        <div class="title">PRODUCT LIST</div>
+        <div class="icon-cart mobile-cart">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
+              />
+            </svg>
+            <span>0</span>
+          </div>
+      </header>
+      <div class="listProduct"></div>
+    </div>
+    <div
+      class="bg-black bg-opacity-30 backdrop-filter backdrop-blur-md border-b border-white/20 shadow-lg cartTab"
+    >
+      <div class="tab-head px-3">
+        <h1>Shopping Cart</h1>
+        <button
+          class="w-24 h-10 close bg-black text-white font-bold py-2 px-4 rounded hover:bg-white hover:text-black transition duration-300"
+        >
+          CLOSE
+        </button>
+      </div>
+      <div class="listCart"></div>
+    </div>
+
+    <!-- footer -->
+
+
+    <footer class="bg-black bg-opacity-30 backdrop-filter backdrop-blur-md text-white pb-5">
+        <div class="container  mx-auto text-center">
+            <p class="">&copy; 2024 Chair Website. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-400">Terms of Service</a>
+                <a href="#" class="hover:text-gray-400">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./image/app.js"></script>
+  </body>
+</html>
